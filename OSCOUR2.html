@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="fr">
+<head>
+	<link href="img/favicon2.png" rel="icon" type="image/x-icon" />
+	<meta charset="utf-8" />	 
+	<title>OSCOUR</title>
+	<link id="css" rel="stylesheet" href="css/style.1.css" />
+	<script src="javascript/index1.js"></script>	
+</head>	
+	<body>
+
+
+<div id="hautpage">
+
+
+<table   id="intro" >
+<tr>
+	<td>
+		<img src="img/sticker-symbole-medecine-4748.png" height="200" alt=" symbole médecine " ></td>
+	<td>
+		<h1> OSCOUR </h1>
+		</br>
+		<h2> Formulaire pour les médecins </h2>
+		</br>
+		<p><a href="#tableauméd"> Tableau des médecins </a></p>
+		</br>
+		<p><a href="http://solidarites-sante.gouv.fr/"> Solidarité-santé.gouv </a></p>
+		
+
+	</td>
+	<td>
+		<img src="img/index.jpg" height="200" alt="ministère de la santé" >
+	</td>
+</tr>
+</table>
+<br/>
+
+<div class="button">
+		<button onclick="document.getElementById('css').href='css/style.1.css';" id="left" >Style.1</button>		
+		<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Date</button>
+		<button onclick="document.getElementById('css').href='css/style.2.css';" id="right" >Style.2</button>
+</div>
+
+<div class="button">
+<p id="demo"></p>
+</div>
+
+<br>
+<br>
+<br>
+<FORM method="get" >
+
+<table border=0>
+<TR>
+	<TD class="question">Etat du patient : </TD>
+	<TD>
+	<INPUT type="radio" name="etat" value="Cosci" onclick="showElem()"	> : Conscient </br>
+<INPUT type="radio" name="etat" value="Com"   onclick="hideElem()"> : dans le coma 
+	<hr>
+	</TD>
+</tr>
+
+</table>
+
+<table id="myDIV" >
+<tr>
+	<td class="question" > Nom , Prénom :</td>
+		<td class="show/hide"><TEXTAREA rows="1" name="comments"></TEXTAREA>
+		<hr>
+	</td>
+</TR>
+
+<tr>
+
+	<TD class="question" > Jour / mois / Année de naissance : </TD>
+	
+	<TD class="show/hide">
+	<form action="/action_page.php"> 
+    <input type="date" name="bday">
+	<hr>
+    </form>
+	</TD>
+</tr> 
+<TR>
+	<TD class="question" >Provenance (facultatif) : </TD>
+	<TD>
+	<SELECT name="prov">
+		<OPTION VALUE="F">France</OPTION>
+		<OPTION VALUE="S">Suisse</OPTION>
+		<OPTION VALUE="B">Belgique</OPTION>
+		<OPTION VALUE="L">Luxembourg</OPTION>
+		<OPTION VALUE="AL">Allemagne</OPTION>
+		<OPTION VALUE="I">Italie</OPTION>
+		<OPTION VALUE="A">Autre</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+</table>
+
+
+
+
+
+</br>
+
+
+<TABLE BORDER=0>
+<TR>
+	<TD class="question">Sexe :  </TD> 
+	<TD>
+	<INPUT type="radio" name="resp" value="Ho"> : Homme </br>
+	<INPUT type="radio" name="resp" value="Fe"> : Femme </br>
+	<INPUT type="radio" name="resp" value="Au"> : Autre
+	<hr>
+	</TD>
+</TR>
+
+<tr>
+<TD class="question">Symptomes : </TD>
+	<TD>
+	<TEXTAREA rows="2" name="comments" ></TEXTAREA>
+	<hr>
+</TD>
+</tr>
+
+<tr>
+<TD class="question">Fièvre ? </TD>
+	<TD>
+		<INPUT type="radio" name="fievre" value="y"onclick="showElement()"> : oui </br>
+		<INPUT type="radio" name="fievre" value="n" onclick="hideElement()"> : non </br>
+		<hr>
+	</td>
+</tr>
+</table>
+</br>
+
+<table id="tabcomb" >	
+<tr>
+	<td class="question"> Combien ?		
+	</TD>	
+	<td>
+		<TEXTAREA rows="1" name="comments"></TEXTAREA>
+		<hr>				
+	</TD>
+	
+</tr>
+</table>
+
+
+<table>
+<TR>
+
+<TD class="question">Respiration artificielle ?  </TD>
+	<TD>
+	<INPUT type="radio" name="respi" value="Ho"> : oui </br>
+	<INPUT type="radio" name="respi" value="Fe"> :  non</br>
+	<hr>
+	</TD>
+</tr>
+<tr>
+
+
+<TD class="question">Tension importante ? </TD>
+	<TD>
+	 <INPUT type="radio" name="tens" value="Ho" onclick="showElement2()"> : oui </br>
+	 <INPUT type="radio" name="tens" value="Fe" onclick="hideElement2()"> :  non</br>
+	<hr>
+</TD>
+</tr>
+</table>
+
+<table id="tabcomb2">
+<tr>
+	<td class="question"> Combien ? </td>
+	<td>
+	<TEXTAREA rows="1" name="comments"></TEXTAREA>
+		<hr>
+	</td>
+</tr>
+</table>
+
+
+
+<table>
+<tr>
+	<TD class="question"> Service de soin nécessaire :  </TD>
+	
+	<TD>
+	<SELECT name="soin">
+		<OPTION VALUE="PE" selected>Peut attendre</OPTION>
+		<OPTION VALUE="UR">Urgences</OPTION>
+		<OPTION VALUE="CA">Cardiologie</OPTION>
+		<OPTION VALUE="CH">Chirurgie</OPTION>
+		<OPTION VALUE="NE">Neurologie</OPTION>
+		<OPTION VALUE="PS">Psychiatrie</OPTION>
+		<OPTION VALUE="QU">Quarantaine</OPTION>
+		<OPTION VALUE="RE">Réanimation</OPTION>
+		<OPTION VALUE="AU">Autre</OPTION>	
+	</SELECT>	
+	<hr>		
+	</TD>
+</TR> 
+
+
+
+<TR>
+	<TD class="question">Num du médecin trieur : </TD>
+	<TD>
+	<SELECT name="nummed">
+		<OPTION VALUE="1.1">1</OPTION>
+		<OPTION VALUE="2.2">2</OPTION>
+		<OPTION VALUE="3.3">3</OPTION>
+		<OPTION VALUE="4.4">4</OPTION>
+		<OPTION VALUE="5.5">5</OPTION>
+		<OPTION VALUE="6.6">6</OPTION>
+		<OPTION VALUE="7.7">7</OPTION>
+		<OPTION VALUE="8.8">8</OPTION>
+		<OPTION VALUE="9.9">9</OPTION>
+		<OPTION VALUE="10.10">10</OPTION>
+	</SELECT>
+	<hr>
+	</TD>
+</TR>
+</TABLE>
+<br>
+<table>
+<TR>
+	<TD COLSPAN=3>
+	<INPUT type="reset" value="Reset">
+	</TD>
+</TR>
+
+</TABLE>
+</br></br></br>
+
+<table id="tableauméd">
+	<TR>
+		<td>
+		<p> <strong>Médecin n°1</strong>:<i>  M.Pasteur</i></p>
+		<hr>
+		<p> <strong>Médecin n°2</strong>:<i>  M.Freud</i></p>
+		<hr>		
+		<p> <strong>Médecin n°3</strong>:<i>  M.Alzheimer</i></p>
+		<hr>		
+		<p> <strong>Médecin n°4</strong>:<i>  M.Barnard</i></p>
+		<hr>		
+		<p><strong> Médecin n°5</strong>:<i>  M.Cabrol</i></p>	
+		<hr>
+		<p> <strong>Médecin n°6</strong>:<i>  M.Galien</i></p>	
+		<hr>
+		<p> <strong>Médecin n°7</strong>:<i>  M.Paré</i></p>
+		<hr>		
+		<p> <strong>Médecin n°8</strong>:<i>  M.Harvey</i></p>
+		<hr>		
+		<p> <strong>Médecin n°9</strong>:<i>  M.Jenner</i></p>
+		<hr>		
+		<p><strong> Médecin n°10</strong>:<i>  M.Bichat</i></p>	
+		</td>
+	</TR>
+</table>
+
+<br/>
+<br/>
+
+     <p><a href="#intro"> Haut de la page </a></p>
+<table>
+
+<TR>
+	<TD>
+	<INPUT type="hidden" name="site" value=12>
+	</TD>
+</TR>
+<TR>
+	<TD COLSPAN=2 class="button">		
+			<button onclick="nbPatient()" >Numéro du patient</button>
+			<INPUT type="submit" value="Envoyer le formulaire">		
+	</TD>
+</TR>
+
+
+</TABLE>
+
+</FORM>
+
+<br/>
+
+</div>
+</body>
+</html>

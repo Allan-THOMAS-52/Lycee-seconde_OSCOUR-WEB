@@ -1,0 +1,125 @@
+﻿
+body
+{
+	
+	background:url(../img/bonhommeblancmedicalequipe.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	background-size:cover;
+	font-size:large;
+}
+
+table
+{
+	margin:auto;
+}
+ h1
+ {
+	 color:red;
+	 margin:auto;
+	 text-align:center;
+ }
+ 
+ h2
+ {
+	color:#5858FA;
+	margin:auto;
+	text-align:center;
+ }
+form
+ {
+	 margin:auto;
+	 text-align:center;
+	 font-size:20px;
+ }
+/* ID */
+#tableauméd
+{
+	border: 30px cyan groove ;
+	border-radius: 50px;
+	box-shadow: 8px 8px 8px #585858;
+	background-color:#F5A9A9;
+	
+}
+#hautdelapage
+{
+	color:red;
+}
+
+#intro
+{
+	margin:auto;
+}
+
+
+
+
+#hautpage
+{
+	background-color:#D8D8D8;
+	width:700px;
+	margin:auto;
+	border: 4px red ridge;
+	border-radius: 10px;
+	box-shadow: 8px 8px 8px #585858;
+	
+}
+/* zzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+
+
+
+.question
+{
+	color:#DF01A5;
+	font-weight:bold;
+}
+
+.button
+{
+	display: flex;
+    justify-content: space-around;
+	
+}
+	
+input
+{
+	font-size:large;
+}
+
+strong
+{
+	text-decoration:;
+	color:#3B8B24;
+}
+p
+{
+	margin:auto;
+	text-align:center;
+	color:;
+	font-size:20px
+}
+
+i
+{
+	color:#0C00FD;
+}
+a
+{
+
+   text-decoration: none;
+   color: darkcyan;
+   font-style: italic;
+   font-size:30px;
+   margin:auto;
+	
+}
+
+
+a:hover
+{
+
+	text-decoration: underline ;
+	color: red;
+		
+}	
